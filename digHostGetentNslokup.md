@@ -84,7 +84,7 @@ Example througt DNS lookup
 getent hosts www.google.com
 ```
 result:
-``
+```
 2a00:1450:400f:804::2004 www.google.com`
 
 ```
