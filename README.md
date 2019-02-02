@@ -1,6 +1,27 @@
-### Set manually gateway
-
+# Manually setting the gateway address
+**Syntax:**
+```bash
+route add default gw <gateway-address>
 ```
+**route:**
+```bash
 route add default gw 192.168.0.1
 ```
-# Setting other routs
+### Setting other route
+**Syntax:**
+```bash
+route add -net network <network-address> netmask <netmaskaddress> gw <gateway-address>
+```
+**eg:**
+```bash
+route add -net network 15.0.0.0 netmask 255.0.0.0 gw 10.0.0.252
+```
+### Deleting the route
+**Syntax:**
+```bash
+route del -net network <network-address> netmask <netmaskaddress> gw <gateway-address>
+```
+**eg:**
+```bash
+route add -net network 15.0.0.0 netmask 255.0.0.0 gw 10.0.0.252
+```
