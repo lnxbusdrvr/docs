@@ -1,4 +1,4 @@
-# Manually setting gateway-address with route-command
+# Manually setting gateway-address with route-command #
 **Syntax:**
 ```bash
 route add default gw <gateway-address>
@@ -7,7 +7,7 @@ route add default gw <gateway-address>
 ```bash
 route add default gw 192.168.0.1
 ```
-### Setting other route
+### Setting other route ###
 **Syntax:**
 ```bash
 route add -net network <network-address> netmask <netmaskaddress> gw <gateway-address>
