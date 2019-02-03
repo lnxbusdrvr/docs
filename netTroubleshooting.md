@@ -40,4 +40,12 @@ Hello world
 And now the "nc -l 2388" -window recieves the "Hello world" -text
 
 
+**traceroute** tracks the route packets taken from an IP network on their way to a given host. It utilizes the IP protocol's time to live (TTL) field and attempts to elicit an ICMP TIME_EXCEEDED response from each gateway along the path to the host. 
+
+Syntax: ```traceroute <address>```
+eg: ```traceroute www.google.com```
+
+**traceroute6** is for ipv6 addressess
+
+**tracepath** and **tracepath6** do same thing as traceroute
 
