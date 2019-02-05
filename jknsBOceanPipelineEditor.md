@@ -37,7 +37,7 @@ Create pipeline
 ----------------------------------------
 ### Editing pipeline ###
 
-![default](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor01.png)
+![default](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor01.png)
 
 Click to "Any"
 
@@ -45,12 +45,12 @@ Change it to: Docker
 
 Add image as: python:3
 
-![Docker with python:3](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor02.png)
+![Docker with python:3](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor02.png)
 
-Click the plus-button ![plus-button](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor03.png) to add a stage ![larger-plus-button](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor04.png)
+Click the plus-button ![plus-button](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor03.png) to add a stage ![larger-plus-button](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor04.png)
 
 Name it to Build as seen on picture
-![build](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor05.png)
+![build](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor05.png)
 
 Click: ```Add step```
 
@@ -58,20 +58,20 @@ and choose:
 ```
 Shell Script
 ```
-![Shell Script](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor05.png)
+![Shell Script](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor05.png)
 
 Add this line to the script:
 ```
 python *.py
 ```
 
-![sh](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor07.png)
+![sh](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor07.png)
 
-Click: ``` Save ``` ![Save](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor08.png)
+Click: ``` Save ``` ![Save](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor08.png)
 
 And finally click: ``` Save & Run ```
 
-![Done](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor09.png)
+![Done](https://github.com/lnxbusdrvr/docs/blob/master/jknsBOceanPipelineEditor09.png)
 
 
 
