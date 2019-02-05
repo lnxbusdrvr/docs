@@ -58,6 +58,19 @@ and choose:
 ```
 Shell Script
 ```
+![Shell Script](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor05.png)
+
+Add this line to the script:
+```
+python *.py
+```
+
+![sh](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor07.png)
+
+Click: ``` Save ``` ![Save](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor08.png)
+
+And finally click: ``` Save & Run ```
+![Done](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor09.png)
 
 
 
