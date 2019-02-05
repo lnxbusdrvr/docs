@@ -47,6 +47,18 @@ Add image as: python:3
 
 ![Docker with python:3](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor02.png)
 
-Click the plus-button ![plus-button](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor03.png) to add a stage
+Click the plus-button ![plus-button](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor03.png) to add a stage ![larger-plus-button](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor04.png)
+
+Name it to Build as seen on picture
+![build](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor05.png)
+
+Click: ```Add step```
+
+and choose:
+```
+Shell Script
+```
+
+
 
 
