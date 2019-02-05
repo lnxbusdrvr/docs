@@ -37,4 +37,4 @@ Create pipeline
 ----------------------------------------
 ### Editing pipeline ###
 
-![My image](username.github.com/repository/img/image.jpg)
+![My image](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor01.png)
