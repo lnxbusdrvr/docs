@@ -37,4 +37,14 @@ Create pipeline
 ----------------------------------------
 ### Editing pipeline ###
 
-![My image](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor01.png)
+![default](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor01.png)
+
+Click to "Any"
+
+Change it to: Docker
+
+Add image as: python:3
+
+![Docker with python:3](https://github.com/lnxbusdrvr/mddocs/blob/master/jknsBOceanPipelineEditor02.png)
+
+
