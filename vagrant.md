@@ -116,6 +116,32 @@ Valitse **vagrantMac_default_154954**... <br>
 Ja paina Show.<br>
 ![VirtualBox_show](https://github.com/lnxbusdrvr/docs/blob/master/img/vagrant01.png)
 
+Mac Os X -kirjautuminen:<br>
+![High_Sierra_Login](https://github.com/lnxbusdrvr/docs/blob/master/img/vagrant02.png)
+
+**FullHD**
+
+Seuraavaksi asetetaan virtuaalikoneen resoluutio.
+Sulje virtuaalikone (poweroff).
+
+Selvitellään mikä meidän Maccikoneen nimi on:
+```
+VBoxManage list vms
+"vagrantMac_default_1549548936285_70433" {71e64873-50b3-46d6-ae10-aa09b261c4d0}
+```
+
+Suoritetaan komento, joka asettaa näytön resoluution.<br>
+Lisätietoa löytyy tästä:<br>
+(https://www.wikigain.com/fix-virtualbox-macos-high-sierra-screen-resolution-1920x1080-4k-5k/)
+
+```
+VBoxManage setextradata vagrantMac_default_1549489730117_46549 VBoxInternal2/EfiGraphicsResolution 1920x1080
+```
+
+**Valmista**
+
+Nyt Macci käynnistyy FHD:na.
+
 
 
 
