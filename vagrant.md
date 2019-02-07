@@ -112,7 +112,7 @@ Tämä kestää kauan, sillä esim Linux/*BSD-imageissa imagen koko on muutamia 
 **VirtualBox**
 
 Avaa graafinen VirtualBox -ohjelma<br>
-Valitse vagrantMac_default_154954...<br>
+Valitse **vagrantMac_default_154954...** <br>
 Ja paina Show.<br>
 ![VirtualBox_show](https://github.com/lnxbusdrvr/docs/blob/master/img/vagrant01.png)
 
