@@ -1,4 +1,4 @@
-# Logoff users by force
+# Logoff users by force & awoid users to login
 
 ### W to see who are logged right now
 
@@ -34,6 +34,20 @@ Now kill that process:
 kill -9 3589
 ```
 
-**1. Other way**
+**2. Avoid users to login**
 
-**Yet other way**
+Just do this with user root:
+```
+touch /etc/nologin
+```
+
+Now users can't login
+
+**More informative way**
+
+Let's put some text to the file(run by root):
+```
+echo "No logins allowed. System is in maintance mode." > /etc/nologin
+```
+
+![login_failed](https://github.com/lnxbusdrvr/docs/blob/master/img/ForceLogoffUser.png)
