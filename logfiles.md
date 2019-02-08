@@ -1,4 +1,4 @@
-# Captain log stardate 42616.3
+# Captain's log stardate 42317.5
 
 ### Last
 
@@ -34,11 +34,28 @@ Shows who runs gimp:<br>
 ```
 fuser -u /usr/bin/gimp
 ``` <br>
-result:<br>
+result: <br>
 ```
 /usr/bin/gimp-2.8:   20172e(joe)
 ``` <br>
-Joe is running gimp with PID of 20172e
+Joe is running gimp with PID of 20172
+
+-u  shows username
+e   Means that it is excecutable beign run.
+
+***What those letters mean?***
+
+c      current directory.
+e      executable being run.
+f      open file.  f is omitted in default display mode.
+F      open file for writing.  F is omitted in default display mode.
+r      root directory.
+m      mmap'ed file or shared library.
+.      Placeholder, omitted in default display mode.
+
+
+
+
 
 
 
