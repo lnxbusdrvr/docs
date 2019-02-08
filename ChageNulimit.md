@@ -6,11 +6,11 @@ NB! It's chage, not change
 
 Syntax:
 ```
-change -M <how_many_days> -W <warn_days_before_expiring_password> <username>
+chage -M <how_many_days> -W <warn_days_before_expiring_password> <username>
 ```
 eg:
 ```
-change -M 30 -W 7 joe
+chage -M 30 -W 7 joe
 ```
 
 -M 30 Set password to expire in 30 days<br>
