@@ -1,6 +1,8 @@
-# Change, Umlimit - User restrictions on Linux
+# Chage, Umlimit - User restrictions on Linux
 
 **chage** command changes the number of days between password changes and the date of the last password change.
+
+NB! It's chage, not change
 
 Syntax:
 ```
