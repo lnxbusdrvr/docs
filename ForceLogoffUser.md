@@ -19,10 +19,11 @@ ken      pts/2    10.0.12.32       23:07    2.00s  0.09s  0.00s rm /etc/passwd
 **1.Killing way**
 
 
-Now let's see what's goin on on pts/2
+Now let's see what's goin on on pts/2:
 ```
 ps -dN | grep pts/2
-``` <br>
+``` 
+
 Result:
 ```
 3589 pts/2    00:00:00 bash
@@ -33,5 +34,6 @@ Now kill that process:
 kill -9 3589
 ```
 
-**Other way**
+**1. Other way**
+
 **Yet other way**
