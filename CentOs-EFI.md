@@ -73,6 +73,17 @@ Tässä pitäisi näkyä ```x86_64-efi``` -hakemisto
 grub2-install /dev/sda
 ```
 
+## Takaisin graafiseen asennusikkunaan
+
+Takaisin asennusikkunaan pääsee tällä näppäinyhdistelmällä:
+Siirrytään shelliin painamalla tätä näppäinyhdistelmää:
+
+```
+<ctrl>+<alt>+<F6>
+```
+
+nyt on turvallista painaa sinistä **reboot**-nappia
+
 Valmis
 
 Ihmettelen kyllä, että miksi tämä ei toiminut ajemmin, mielestäni kyllä yritin tätä samaa tapaa,
