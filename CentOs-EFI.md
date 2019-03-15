@@ -95,6 +95,10 @@ Käynnistyksen jälkeen:
 ERROR: No boot disk has detected or the disk has failed.
 ```
 
+## Koneessa ei UEFI-tukea
+
+Selvisikin, että koneessa ei ole UEFI-tukea :D
+
 Asennan Fedoran
 CentOs on vaan haastavampi, kuin Arch Linux.
 Aika huono tuote. Ei kelpaa, kuin Vagranttiin ja Dockerin ajamiseen.
