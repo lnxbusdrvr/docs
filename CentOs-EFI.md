@@ -88,3 +88,15 @@ Valmis
 
 Ihmettelen kyllä, että miksi tämä ei toiminut ajemmin, mielestäni kyllä yritin tätä samaa tapaa,
 mutta **/usr/lib/grub** -hakemistossa oli silti vain i386-pc -hakemisto
+
+## Mikä on, kun ei taidot riitä mikä on, kun ei onnistu
+Käynnistyksen jälkeen:
+```
+ERROR: No boot disk has detected or the disk has failed.
+```
+
+Asennan Fedoran
+CentOs on vaan haastavampi, kuin Arch Linux.
+Aika huono tuote. Ei kelpaa, kuin Vagranttiin ja Dockerin ajamiseen.
+
+Anteeksi ja kumarrus
