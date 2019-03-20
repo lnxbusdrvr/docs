@@ -59,9 +59,9 @@ unzip Terraform's .zip -file: <br>
 unzip terraform_0.11.13_linux_amd64.zip
 ```
 
-Now move t```terraform``` -file to binary location:<br>
+Now move ```terraform``` -file to binary PATH:<br>
 ```
-sudo mv terraform /usr/local/bin
+sudo mv terraform /usr/local/bin/
 ```
 
 ## Install ansible
