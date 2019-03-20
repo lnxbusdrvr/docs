@@ -45,7 +45,7 @@ sudo apt-get upgrade
 ```
 ## Download terraform
 
-Download Terraform from Terraform's webpage: <br>
+Download Terraform from Terraform's webpage <br>
 In terminal do this: <br>
 ```
 sudo apt-get install unzip
@@ -56,7 +56,7 @@ So firstly we downloaded unzip-program and then we downloaded Terraform-app in .
 
 unzip Terraform's .zip -file: <br>
 ```
-unzip terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+unzip terraform_0.11.13_linux_amd64.zip
 ```
 
 Now move t```terraform``` -file to binary location:<br>
