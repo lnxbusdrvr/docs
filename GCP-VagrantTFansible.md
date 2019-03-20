@@ -59,7 +59,7 @@ unzip Terraform's .zip -file: <br>
 unzip terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
 ```
 
-Now move t````terraform``` -file to binary location:<br>
+Now move t```terraform``` -file to binary location:<br>
 ```
 sudo mv terraform /usr/local/bin
 ```
@@ -81,8 +81,8 @@ ssh-keygen
 Copy content of ~/.ssh/id_rsa.pub <br>
 You can see the content of the file by opening eg. with nano: <br>
 ```
-nano ~/.ssh/id_rsa.pub
-``` <br>
+nano ~/.ssh/id_rsa.pub<br>
+``` 
 or with ```cat``` : <br>
 ```
 cat ~/.ssh/id_rsa.pub
