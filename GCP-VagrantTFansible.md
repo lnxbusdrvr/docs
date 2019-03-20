@@ -86,7 +86,7 @@ nano ~/.ssh/id_rsa.pub<br>
 or with ```cat``` : <br>
 ```
 cat ~/.ssh/id_rsa.pub
-``` <br>
+```
 
 Copy the content of file with mouse
 
