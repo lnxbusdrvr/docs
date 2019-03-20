@@ -23,7 +23,7 @@ cd vagrant
 
 ## Get Vagrant Ubuntu desktop image & start vagrant
 
-We are not in vagrant-direcrory which we just created:
+We are now in vagrant-direcrory which we just created:
 Command this to get image:
 
 ```
@@ -190,12 +190,22 @@ Save flie -window will pop-up
 Save the .json -file or it's content <br>
 to ``` ~/src/terraform/.security ``` -directory <br>
 Name it as: ```serviceaccount.json```
-    
+
+## .gitignore -file
+
+Edit .gitignore file <br>
+nano ~/src/terraform/.gitignore`` -file looks like this: <br>
+
+```
+.security/
+```
+Press "ctrl+x" to save file
     
 ## Edit provider.tf
 
-```~/src/terraform/provider.tf``` -file looks like this:
-
+```
+nano ~/src/terraform/provider.tf``` -file looks like this:
+```
 ```
 provider "google" {
   credentials = "${file(".security/serviceaccount.json")}"
@@ -203,10 +213,12 @@ provider "google" {
   region      = "europe-north1-b"
 }
 ```
+press "ctrl+x" to save file
+
 
 ## Edit gkecluster.tf
 
-```~/src/terraform/gkecluster.tf``` looks like this:
+```nano ~/src/terraform/gkecluster.tf``` looks like this:
 
 ```
 resource "google_container_cluster" "primary" {
@@ -217,6 +229,7 @@ resource "google_container_cluster" "primary" {
 }
 ```
 
+press "ctrl+x" to save file  <br>
 project = "inframimmit" should be your own project name
 
 
