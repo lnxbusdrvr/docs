@@ -1,5 +1,5 @@
 
-## Vagrant GCP CloudBuild in vagrant gcloud Terraform & Ansible
+## CloudBuild in vagrant GCP Terraform
 
 ## Install VirtualBox
 
@@ -104,15 +104,43 @@ Now click the green **New SSH key** -button <br>
 Title:
     <enter name of your computer here>
 Key:
-    <content of your ~/.ssh/id_rsa.pub -file>
+    <paste content of your ~/.ssh/id_rsa.pub -file>
 
 Click green **Add SSH Key** -button
 
-TÄSTÄ ALAS KESKEN
-## Clone .tf and ansible-files from your git repo
 
-cd src
-git clone <your_git_repo>
+## Install GCloud
+
+
+Create environment variable for correct distribution: <br>
+```
+export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+```
+
+Add the Cloud SDK distribution URI as a package source: <br>
+```
+echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+```
+
+Import the Google Cloud Platform public key: <br>
+```
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
+```
+Finally install the app: <br>
+```
+sudo apt-get update ; sudo apt-get install google-cloud-sdk
+```
+## Create project directory in your vagrant machine
+
+Create project dir: <br>
+```
+mkdir -p ~/src/terraform/.secret
+```
+Enter the terraform -directory: <br>
+```
+cd ~/src/terraform
+```
 
 ## Create Project in GCP (Google cloud)
 
@@ -121,11 +149,14 @@ Create new project in GCP
 
 ## EasyWay to authorize with GCP
 
+In vagrant machine terminal
 login to GCP:
 
 ```
 gcloud auth login
 ```
+Firefox/Chrome opens a google login-page<br>
+Accept all things
 
 ## HardWay to authorize with GCP
 
@@ -156,46 +187,64 @@ key type
 
 Save flie -window will pop-up
 
-Save the .json
+Save the .json -file or it's content <br>
+to ``` ~/src/terraform/.security ``` -directory <br>
+Name it as: ```serviceaccount.json```
 
+**TÄSTÄ ALAS EI OLE TESTATTU**
 ## Edit provider.tf
 
-Beginning of ```project.tf``` looks like this:
+```provider.tf``` looks like this:
 
-```tf
+```
 provider "google" {
-  credentials = "${file(".cred/serviceacct.json")}"
+  credentials = "${file(".security/serviceaccount.json")}"
   project     = "inframimmit"
   region      = "${var.region}"
 }
-```tf
+```
+
+## Edit gkecluster.tf
+
+```gkecluster.tf``` looks like this:
+
+```
+resources "google.container_cluster" "primary" {
+  name			= "kubernetes-cluster" #This can named as whatever you want
+  network		= "default"
+  zone			= "europe-north1-b"
+  initial_node_count	= 3
+}
+```
 
 project = "inframimmit" should be your own project name
 
-## Initialize Terraform
+**Initialize Terraform**
 
 ```
 terraform init
 ```
 
-## Test .tf-files
+**Test .tf-files**
 
 ```
 terraform plan
 ```
 
-## Start terraform
+**Start Terraform**
 
 ```
 terraform apply
-``
+```
 
 "Do you want to perform these actions?
   Terraform will perform the actions described above.
-  Only 'yes' will be accepted to approve.
+  Only yes will be accepted to approve.
 
   Enter a value:"
 
 ``` yes```
 
+
+***ANSIBLE STUFF I DO LATER, WHEN I GET IT TO WORK***
 
