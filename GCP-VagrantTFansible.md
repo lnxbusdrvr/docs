@@ -11,7 +11,6 @@ Install vagrant from their webpage:
 Install vagrant from their pagpage:
 (https://www.vagrantup.com/downloads.html)
 
-Download terraform from terraform netpage
 
 ## Prepare to use Vagrant
 
@@ -35,7 +34,8 @@ vagrant init peru/ubuntu-18.04-desktop-amd64
 ```
 vagrant up
 ```
-## Install update and few programs
+
+## Install updates and programs
 
 Open setting and change language to your fits.<br>
 Install updates: <br>
@@ -43,23 +43,83 @@ Install updates: <br>
 sudo apt-get update
 sudo apt-get upgrade
 ```
-**TÄSTÄ ALASPÄIN KESKEN**
+## Download terraform
+
+Download Terraform from Terraform's webpage: <br>
+In terminal do this: <br>
+```
+sudo apt-get install unzip
+wget -c https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+```
+
+So firstly we downloaded unzip-program and then we downloaded Terraform-app in .zip -file
+
+unzip Terraform's .zip -file: <br>
+```
+unzip terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+```
+
+Now move t````terraform``` -file to binary location:<br>
+```
+sudo mv terraform /usr/local/bin
+```
+
 ## Install ansible
 
 ```
 sudo apt-get install ansible
 ```
-## Clone tf and ansible-files
+
+## Make ssh-key
+
+Make ssh-key to authorize to use git:
+
+```
+ssh-keygen
+```
+
+Copy content of ~/.ssh/id_rsa.pub <br>
+You can see the content of the file by opening eg. with nano: <br>
+```
+nano ~/.ssh/id_rsa.pub
+``` <br>
+or with ```cat``` : <br>
+```
+cat ~/.ssh/id_rsa.pub
+``` <br>
+
+Copy the content of file with mouse
+
+## Add your public ssh-key to GitHub
+
+Go to (https://www.github.com/)
+Log in <br>
+In right of page there is your profile picture<br>
+Click your profile-picture<br>
+and click **Settings** <br>
+In settings-page:
+Click **SSH and GPG keys** <br>
+Now click the green **New SSH key** -button <br>
+
+Title:
+    <enter name of your computer here>
+Key:
+    <content of your ~/.ssh/id_rsa.pub -file>
+
+Click green **Add SSH Key** -button
+
+TÄSTÄ ALAS KESKEN
+## Clone .tf and ansible-files from your git repo
 
 cd src
-git clone <kodinterr>
+git clone <your_git_repo>
 
 ## Create Project in GCP (Google cloud)
 
 Create new project in GCP
 
 
-## EasyWay to authorize
+## EasyWay to authorize with GCP
 
 login to GCP:
 
@@ -67,8 +127,7 @@ login to GCP:
 gcloud auth login
 ```
 
-
-## HardWay to authorize
+## HardWay to authorize with GCP
 
 ### Make credenials on GCP-page:
 
