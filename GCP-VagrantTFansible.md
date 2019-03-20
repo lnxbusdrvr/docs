@@ -135,7 +135,7 @@ sudo apt-get update ; sudo apt-get install google-cloud-sdk
 
 Create project dir: <br>
 ```
-mkdir -p ~/src/terraform/.secret
+mkdir -p ~/src/terraform/.security
 ```
 Enter the terraform -directory: <br>
 ```
@@ -190,34 +190,38 @@ Save flie -window will pop-up
 Save the .json -file or it's content <br>
 to ``` ~/src/terraform/.security ``` -directory <br>
 Name it as: ```serviceaccount.json```
-
-**TÄSTÄ ALAS EI OLE TESTATTU**
+    
+    
 ## Edit provider.tf
 
-```provider.tf``` looks like this:
+```~/src/terraform/provider.tf``` -file looks like this:
 
 ```
 provider "google" {
   credentials = "${file(".security/serviceaccount.json")}"
   project     = "inframimmit"
-  region      = "${var.region}"
+  region      = "europe-north1-b"
 }
 ```
 
 ## Edit gkecluster.tf
 
-```gkecluster.tf``` looks like this:
+```~/src/terraform/gkecluster.tf``` looks like this:
 
 ```
-resources "google.container_cluster" "primary" {
-  name			= "kubernetes-cluster" #This can named as whatever you want
-  network		= "default"
-  zone			= "europe-north1-b"
+resource "google_container_cluster" "primary" {
+  name			        = "kubernetes-cluster" #This can named as whatever you want
+  network		        = "default"
+  zone			        = "europe-north1-b"
   initial_node_count	= 3
 }
 ```
 
 project = "inframimmit" should be your own project name
+
+
+In directory: ```~/src/terraform/```
+Run these next 3 commands <br>
 
 **Initialize Terraform**
 
@@ -245,6 +249,24 @@ terraform apply
 
 ``` yes```
 
+
+If ```terraform apply``` will error
+try to enable Kubernetes API in GCP
+
+Go to GCP (https://cloud.google.com/) <br>
+Make sure you have right project <br>
+In Navigation Manu: <br>
+**Compute**
+    **Kubernetes Engine**
+Kubernetes API should start
+You might need to restart terraform: <br>
+
+```
+terraform destroy
+terraform init
+terraform plan
+terraform apply
+```
 
 ***ANSIBLE STUFF I DO LATER, WHEN I GET IT TO WORK***
 
