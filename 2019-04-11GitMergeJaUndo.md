@@ -1,0 +1,62 @@
+
+# Git kun teet haaroja
+
+Kun teet omia haaroja(Branches), niin **älä poista** niitä masterista kopioituja tiedostoja uudessa haarassa **ikinä** (vaikka Erkki ja hänen koira sanoisi niin).
+
+## Minä tein just niin
+
+No niin, tietenkin.
+
+1. Ota varmuuden vuoksi .zip-kopio haarastasi
+1. Poista koneeltasi koko hakemisto
+1. Ja aloita alusta
+
+### Jatketaan
+
+```
+git clone git@github.com:username/repo.git
+```
+
+Kopioi poistamaasi tiedostot master-haarasta jonnekiin talteen
+
+```
+git checkout <sinun_haarasi>
+git pull
+```
+
+Kopioi nämä juuri ```master``` -haarasta kopioimasi tiedostot sinne missä ne alunperin olikin
+
+lisää kaikki nämä tiedostot git addilla uudelleen haaraan, committaa ja pushaa ne gittiin:
+
+```
+git add tiedosto_jossain.md jokuToinenTiedostoJossain.md README.md
+git commit -m "Tiedostot palautettu"
+git push -u origin <sinun_haarasi>
+```
+
+### Tämä ei ollut vielä ohi
+
+Nyt siirry haaraan johoon haluat tehdä pull requestin.
+Esim: 
+
+master <--- sinun_haarasi
+
+Siirry nyt sinun_haarasi:sta masteriin:
+
+```
+git checkout master
+```
+
+### Melkein ohi
+
+Viimeiseksi pitää tehdä ```merge``` jotta tämä toimisi oikein
+
+Olet siis master-haarassa ja komennat tämän:
+
+```
+git merge sinun_haarasi
+```
+
+Voilá nyt se on korjattu.
+
+Saattaa olla, että jossakin välissä pitää tehdä myös ```git pull``` ohjelma kyllä ilmoittaa siitä sitten.
