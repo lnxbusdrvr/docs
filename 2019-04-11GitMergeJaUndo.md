@@ -67,4 +67,10 @@ Tälläisissä tapauksissa vai omalle haaralle hakea mergen masterista, eikä ta
 
 [Bring your feature branch up to date with master. ](https://gist.github.com/santisbon/a1a60db1fb8eecd1beeacd986ae5d3ca)
 
-Edit: 12.04.2019
+## git checkout <tiedosto>
+  
+```git checkout <tiedosto>``` palauttaa commitin siihen tilaan missä tämä tiedosto viimeksi oli.
+
+
+Edit: 12.04.2019 klo 13:00
+Еdit: 12.04.2019 klo 13:20
