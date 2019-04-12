@@ -60,3 +60,11 @@ git merge sinun_haarasi
 Voilá nyt se on korjattu.
 
 Saattaa olla, että jossakin välissä pitää tehdä myös ```git pull``` ohjelma kyllä ilmoittaa siitä sitten.
+
+## Uuttaa tietoa
+
+Tälläisissä tapauksissa vai omalle haaralle hakea mergen masterista, eikä tarvitse koko yö tapella ja siirrellä tiedostoja.
+
+[Bring your feature branch up to date with master. ](https://gist.github.com/santisbon/a1a60db1fb8eecd1beeacd986ae5d3ca)
+
+Edit: 12.04.2019
