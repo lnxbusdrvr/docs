@@ -1,25 +1,6 @@
-# ssh user@host -X ja no DISPLAY
+# ssh ja Graafisen ohjelman suoritus
 
-## Ongelma
-Outo ongelma, kun yrittää etänä käynnistää graafisia (X Window System) ohjelmia 
-esim: `xclock` tulostuu näytölle ilmoitus: ```Error: Can't open display```
-
-## Ratkaisu
-
-Muokkaa palvelimen ```/etc/ssh/sshd_config``` -tiedostoa, jotta siellä
-olisi nämä kohdat:
-
-/etc/ssh/sshd_config:
-
-```
-X11Forwarding yes
-X11DisplayOffset 10
-X11UseLocalhost no
-```
-
-Varsingkin kohta: ```X11UseLocalhost no``` tuntui olevan ratkaiseva muutos toimivuuteen.
-
-### ssh x11 forwarding kertaus
+## ssh x11 forwarding
 
 Graafisia ohjelmia suojatun X-tunnelin läpi voi siis ajaa näin:
 
