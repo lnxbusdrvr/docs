@@ -39,8 +39,11 @@ luodaan siis ssh-yhteys ```palvelin``` -nimiseen tietokoneseen ```kayttaja``` -n
 
 Yhteyden voi muodostaa myös ip-osoitteella esim: ```kayttaja@8.8.8.8 -X```
 
-```-X``` tarkoittaa, että luodaan X Window System-tunneli, jolloin voi suojatun verkon yli suorittaa myös graafisia ohjelmia esim: ```firefox```, ```xclock```, ```chromium```, ```eclipse```, ```netbeans``` ja vaikka ```libreoffice``` ehkä jopa ```tuxrace```, mutta 3D-pelit saattaa toimia hitaasti.
-Graafisen ohjelmien suorittamiseen tarvitaan myös asiakaskoneseen (mistå ssh-yhteys aloitetaan) on oltava X-ikkunointijärjestelmä. Graafisissa Unix(mukaanlukien Mac OS X)/Linuxeissa on yleensä X.
+```-X``` tarkoittaa, että luodaan X Window System-tunneli, jolloin voi suojatun verkon yli suorittaa myös graafisia ohjelmia 
+
+esim: ```firefox```, ```xclock```, ```chromium```, ```eclipse```, ```netbeans``` ja vaikka ```libreoffice``` ehkä jopa ```tuxrace```, mutta 3D-pelit saattaa toimia hitaasti/huonosti.
+
+Graafisen ohjelman suorittamiseen tarvitaan myös asiakaskoneseen (mistå ssh-yhteys aloitetaan) X Window System. Graafisissa Unixeissa(mukaanlukien Mac OS X)/Linuxeissa on yleensä X. Mac OS X:ssä pitää asentaa jokin sisäänrakennettu lisäohjelma.
 
 ## Linkit
 1. [comp.security.ssh: What does "X11UseLocalhost no" do?](https://groups.google.com/forum/#!topic/comp.security.ssh/ri8yJGOSfHQ)
