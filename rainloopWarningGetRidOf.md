@@ -1,4 +1,4 @@
-## Rainloop Warning
+## Warning! RainLoop data folder is accessible
 
 Get rid of of Rainloop Warning-message in admin-page
 
